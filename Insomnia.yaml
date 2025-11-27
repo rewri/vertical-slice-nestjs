@@ -1,0 +1,100 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: " vertical-slice-nestjs-app"
+meta:
+  id: wrk_6efafa1005d04bae8858129c9b2bce81
+  created: 1764242282396
+  modified: 1764242282396
+  description: ""
+collection:
+  - url: http://localhost:3000/users
+    name: list-users
+    meta:
+      id: req_740e300d8ddb49d881ac34df3ee1d926
+      created: 1764242286064
+      modified: 1764263609410
+      isPrivate: false
+      description: ""
+      sortKey: -1764242286064
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/users
+    name: create-user
+    meta:
+      id: req_d47eda1997f64dd4a04587c69fd0d299
+      created: 1764254384902
+      modified: 1764262871983
+      isPrivate: false
+      description: ""
+      sortKey: -1763306101298.5
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "name": "Rérisson Fumes",
+          "email": "email1@email.com"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/health
+    name: health
+    meta:
+      id: req_d6ca83ceea0841b48c802ee266d1c266
+      created: 1764262901110
+      modified: 1764262906015
+      isPrivate: false
+      description: ""
+      sortKey: -1764242286164
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_24fdcb271a8a7ced1619d13da7c02ad86e8fb263
+    created: 1764242282401
+    modified: 1764242282401
+environments:
+  name: Base Environment
+  meta:
+    id: env_24fdcb271a8a7ced1619d13da7c02ad86e8fb263
+    created: 1764242282398
+    modified: 1764242282398
+    isPrivate: false
